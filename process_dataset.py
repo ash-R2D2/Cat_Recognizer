@@ -25,7 +25,7 @@ def square_crop_Image(img):
 
 
 images = []
-for img in glob.glob(r"C:\Users\avina\Documents\Deep Learning\Neural networks and deep learning\Logistic Regression\Random\*.JPG"):
+for img in glob.glob("\Logistic Regression\Random\*.JPG"):
     img = Image.open(img)
     img = square_crop_Image(img)
     img = img.resize((500,500))
