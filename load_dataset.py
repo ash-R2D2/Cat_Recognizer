@@ -5,20 +5,18 @@ from random import shuffle
 
 def load_images():
     dataset = []
-    for img in glob.glob(r"C:\Users\avina\Documents\Deep Learning\Neural networks and deep learning\Logistic Regression\cats-mini\*.JPG"):
+    for img in glob.glob("cats_dataset\*.JPG"):
         img = Image.open(img)
         img_arr = np.array(img)
         dataset.append([img_arr, 1])
 
-    for img in glob.glob(r"C:\Users\avina\Documents\Deep Learning\Neural networks and deep learning\Logistic Regression\non-cat\*.JPG"):
+    for img in glob.glob("non-cat_dataset\*.JPG"):
         img = Image.open(img)
         img_arr = np.array(img)
         dataset.append([img_arr, 0])
 
     shuffle(dataset)
     return dataset
-
-
 
 def load_dataset():
     dataset = load_images()

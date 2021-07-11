@@ -22,9 +22,7 @@ var/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
-CATS/
-cats-mini/
-non-cat/
+
 venv/
 *.egg-info/
 .installed.cfg
