@@ -44,6 +44,16 @@ def load_dataset():
     return X_train, Y_train, X_test, Y_test
 
 
+a,b,c,d = load_dataset()
+
+print(a.shape)
+print(b.shape)
+print(c.shape)
+print(d.shape)
+
+
+
+
 
 
 
